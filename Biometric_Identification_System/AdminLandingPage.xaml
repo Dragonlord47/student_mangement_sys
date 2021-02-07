@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="BiometricIdentificationSystem.AdminLandingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BiometricIdentificationSystem"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/background_landing.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <!--<TextBlock x:Name="AppTitle" Style="{StaticResource CaptionTextBlockStyle}" Text="{x:Bind appmodel:Package.Current.DisplayName}" IsHitTestVisible="False"/>-->
+
+        <NavigationView  x:Name="m_navigation_view" OpenPaneLength="280" CompactModeThresholdWidth="560" SelectionChanged="NavigationView_SelectionChanged" IsBackButtonVisible="Collapsed">
+           
+            
+            <NavigationView.MenuItems>
+                <NavigationViewItem>
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE13D;" FontSize="20"/>
+                        <TextBlock x:Name="admin_name"  FontSize="20" Margin="7,0,0,0"/>
+                    </StackPanel>
+                </NavigationViewItem>
+                <NavigationViewItemSeparator/>
+                
+                <NavigationViewItemHeader>Manage Students</NavigationViewItemHeader>
+                <NavigationViewItem Icon="AddFriend" Content="Register Student" x:Name="create_student_record" />
+                <NavigationViewItem Icon="Document" Content="View Records" x:Name="view_students_records"/>
+               
+                <NavigationViewItem Icon="Library" Content="Archive" x:Name="archive_record"/>
+                <NavigationViewItemHeader>Manage Staff</NavigationViewItemHeader>
+                <NavigationViewItem  Icon="Admin" Content="create Admin" x:Name="create_staff_record"/>
+                <NavigationViewItem  Icon="ProtectedDocument" Content="View Admin" x:Name="view_staff_record"/>
+            </NavigationView.MenuItems>
+            <Frame x:Name="ContentFrame" >
+                <Frame.ContentTransitions>
+                    <TransitionCollection>
+                        <NavigationThemeTransition/>
+                    </TransitionCollection>
+                </Frame.ContentTransitions>
+            </Frame>
+        </NavigationView>
+
+    </Grid>
+</Page>

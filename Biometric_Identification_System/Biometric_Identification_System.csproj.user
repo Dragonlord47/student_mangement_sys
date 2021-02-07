@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\francis xavier\source\repos\Biometric_Identification_System\Biometric_Identification_System\Assets\caleb_logo.png</Source>
+    <SmallTileSource>C:\Users\francis xavier\source\repos\Biometric_Identification_System\Biometric_Identification_System\Assets\caleb_logo.png</SmallTileSource>
+    <MediumTileSource>C:\Users\francis xavier\source\repos\Biometric_Identification_System\Biometric_Identification_System\Assets\caleb_logo.png</MediumTileSource>
+    <WideTileSource>C:\Users\francis xavier\source\repos\Biometric_Identification_System\Biometric_Identification_System\Assets\caleb_logo.png</WideTileSource>
+    <LargeTileSource>C:\Users\francis xavier\source\repos\Biometric_Identification_System\Biometric_Identification_System\Assets\caleb_logo.png</LargeTileSource>
+    <AppIconSource>C:\Users\francis xavier\source\repos\Biometric_Identification_System\Biometric_Identification_System\Assets\caleb_logo.png</AppIconSource>
+    <SplashScreenSource>C:\Users\francis xavier\source\repos\Biometric_Identification_System\Biometric_Identification_System\Assets\caleb_logo.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\francis xavier\source\repos\Biometric_Identification_System\Biometric_Identification_System\Assets\caleb_logo.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>
